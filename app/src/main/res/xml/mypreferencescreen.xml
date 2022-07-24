@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="soundAlarmCheckBox"
+        android:title="Sound alarms 30 minutes before tasks" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="rememberCompletedCheckBox"
+        android:title="Remember completed tasks" />
+</PreferenceScreen>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addTaskBTN"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="addTaskClicked"
+        android:text="Add a new task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yourTasksTV"
+        android:layout_width="131dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:text="Your Tasks : "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTaskBTN" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="518dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editTaskBTN"
+        android:layout_width="109dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:onClick="editTaskClicked"
+        android:text="Edit Task"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/addTaskBTN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/removeTaskBTN"
+        android:layout_width="133dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="8dp"
+        android:onClick="removeTaskClicked"
+        android:text="Remove Task"
+        app:layout_constraintStart_toEndOf="@+id/completeTaskBTN"
+        app:layout_constraintTop_toBottomOf="@+id/rvTasks" />
+
+    <Button
+        android:id="@+id/completeTaskBTN"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="8dp"
+        android:onClick="completeTask"
+        android:text="Complete Task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvTasks" />
+
+    <Switch
+        android:id="@+id/viewCompletedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="4dp"
+        android:text="View Completed"
+        app:layout_constraintBottom_toTopOf="@+id/rvTasks"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/renewTaskBTN"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="renewTaskClicked"
+        android:text="Renew Task"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/rvTasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

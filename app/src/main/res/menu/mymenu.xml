@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"  >
+
+
+        <item
+            android:id="@+id/settingBottom"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"
+             />
+        <item
+            android:id="@+id/ExitButton"
+            android:icon="@drawable/ic_exit"
+            android:title="Exit" />
+</menu>
